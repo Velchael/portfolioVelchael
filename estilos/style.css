@@ -5,7 +5,7 @@
   }*/
   
   .carrusel {
-    height: 100vh;
+    height: 130vh;
     display: flex;
     align-items: center;
   }
@@ -16,7 +16,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 140px 0px;
+    padding: 115px 0px;
     /*245*/
   }
   
@@ -27,15 +27,16 @@
     /*height: 10px;*/
     /*outline: 1px solid black;*/
     cursor: pointer;
-    height: 220px;
+    height: 280px;
     width: 0px;
-    /*border-radius: 6px;
-    height: 150px;
+    border-radius: 12px;
+    box-shadow: 0 5px 7px 0 rgba(0 0 0 / 20%);
+    /*height: 150px;
     width: 185px;*/
   }
   
   .carrusel-item img {
-    width: 100%;
+    width: 85%;
     height: 75%;
     object-fit: cover;
   }

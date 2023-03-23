@@ -107,13 +107,13 @@ body {
   grid-column: 1 / 5;
 }
 
-.publicidade-final {
-  /*grid-column: 1 / 5;*/
+/*.publicidade-final {
+  /*grid-column: 1 / 5;
   margin-top: 0;
   padding: 10px;
-  grid-column-start: 0;
+ /* grid-column-start: 0;
   grid-column-end: 5;
-}
+}*/
 
 .rodape {
   background-color: rgb(0, 113, 128);

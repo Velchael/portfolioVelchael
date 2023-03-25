@@ -10,7 +10,8 @@ body > * {
 body {
   background-color:rgb(206, 212, 211);
   min-height: 100vh;
- /* display: grid; elimiar para fazer o scrol automatico*/
+  /*display: grid; */
+ /*elimiar para fazer o scrol automatico*/
   grid-template-rows: 60px 500px 350px 180px 150px 500px 700px;
   column-gap: 0px;
   row-gap: 0px;
@@ -326,7 +327,7 @@ img {
 
     font-size: 14px;
 
-    width: 90%;
+    width: 70%;
     padding: 15px;
 }
 
@@ -386,7 +387,7 @@ img {
 }
 
 .form textarea {
-  min-height: 7rem;
+  min-height: 6rem;
   resize: vertical;
 }
 /*.carrusel {

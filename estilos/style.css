@@ -16,7 +16,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 115px 0px;
+    padding: 125px 0px;
     /*245*/
   }
   
@@ -36,8 +36,8 @@
   }
   
   .carrusel-item img {
-    width: 85%;
-    height: 75%;
+    width: 90%;
+    height: 70%;
     object-fit: cover;
   }
   
@@ -69,7 +69,7 @@
   padding:60px;
 }
   .card__info{
-    height: 100px;
+    height: 120px;
     width: 171px;
     border-radius: 12px;
     background-color: rgb(255 255 255);
@@ -93,8 +93,8 @@
   }
   
   .card__info > span {
-    display: block;
-    margin-top: 1px;
+   /* display: block;*/
+    margin-top: 0px;
   }
   .card__titulo {
     text-align: center;
@@ -106,7 +106,7 @@
     line-height: 14px;
     width: fit-content;
     padding: 2px 4px;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
   }
 
   .card__servico {
@@ -117,8 +117,8 @@
   }
   
   .card__interesse  {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 19px;
+    line-height: 21px;
     color: rgba(0 0 0 / 80%);
   }
   

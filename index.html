@@ -6,8 +6,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./estilos/estilo.css">
       <title>Projeto Salvador</title>
-      </head>
-      <body>
+      <script>
+        window.addEventListener('load', function() {
+          var liElement = document.querySelector('li.list:first-child');
+          if (liElement) {
+            liElement.scrollIntoView();
+          }
+        });
+        </script>
+     </head>
+    <body>
        <header class="cabecalho">
          <style>#menu ul li a {text-decoration:none;}</style>
          <div class="imagem-topo1"><img src="eunoonibusultimaversion.jpg"height="200" width="500" alt="Eu no Salvador."
@@ -15,11 +23,11 @@
          </div>
          <nav id="menu">
           <ul style="color:#060606">
-           <li class="list"><a href ="#"> Apresentação </a></li>
-           <li class="list"><a href ="#"> Formação  </a></li>
-           <li class="list"><a href ="#"> Experiência  </a></l1>
-           <li class="list"><a href ="#"> Projetos </a></li>
-           <li class="list"><a href ="#"> Fale_Comigo </a></li>
+           <li class="list"><a href ="#">Apresentação</a></li>
+           <li class="list"><a href ="#">Formação</a></li>
+           <li class="list"><a href ="#">Experiência</a></l1>
+           <li class="list"><a href ="#">Projetos</a></li>
+           <li class="list"><a href ="#">Fale_Comigo</a></li>
           </ul>
          </nav>
        </header>
@@ -42,21 +50,15 @@
            </div>
           </div>
         </div>
-        
-              <main class="conteudo">
-                
-                 <div style="color:#060606">
-                
+            <main class="conteudo">          
+                <div style="color:#060606">
                   <h1>Velchael Mendez</h1>
                   <h2>Desenvolvedor fron-End</h2>
                   <h3>Que tal?</h3>
                   <p> Sou <strong>Venezuelano</strong>, falo  <strong> espanhol estou começando uma nova história no BRASIL.
                    Tenho quatro anos morando na cidade de <strong>Salvador da Bahia</strong>
                   </p>
-                 </div>
-                 
-                
-              
+                </div>
                 <aside class="lateral">
                   <div style="color:#01010e">
                     <h1>formação</h1>
@@ -73,28 +75,16 @@
                    </p>
                   </div>
                 </aside>  
-
-
-                <div class="publicidade-final">
-                 
-                  <h1>_____________________</h1>
-                  <br />
-                  
+                <div class="publicidade-final">     
                   <h1>Projetos</h1>
-                  <h3>Venha conhecer</h3>
-                  <p>Themos tudo tipo de proyectos</p>
-                  <h3>_____</h3>
-                
-                <div class="carrusel">
-                    
-                <div class="carrusel-items">  
+                  <div class="carrusel">       
+                   <div class="carrusel-items">  
                       <div class="carrusel-item">
-                       
                         <a href="https://velchael.github.io/react-dummydos">
                          <img src="lojapet.jpg" alt="Foto de loja Petz" >
                          <div class="card__info" >
                           <span class="card__titulo">TOTIpetz, tudo para o cuidado de seu Petz</span>
-                          <span class="card__servico">Serviço personalizado e responsavel</span>
+                          <span class="card__servico">Serviço personalizado</span>
                           <span>
                           <span class="card__interesse">Cuide, Alimente, Fique bem.</span>
                           </span>
@@ -103,60 +93,32 @@
                           <span class="card__titulo">Ven logo</span>
                           </span>
                          </div>
-                        </a>
-                        <a href="https://github.com/Velchael/react-dummydos.git" class="botao-car botao_primario">
-                         <spam class="card__titulorepositorio">Repositorio</spam>
-                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                          <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                         </svg>
-                        </a>
-                        <a href="https://velchael.github.io/react-dummydos" class="botao-car botao_primario">
-                         <spam class="card__titulorepositorio">Demo</spam>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                          <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                         </svg>
-                        </a>
-                      
+                        </a>        
                       </div>
-
                       <div class="carrusel-item">
-                      
-                       <a href="https://velchael.github.io/dummyquatro">
-                        <img src="institutonu.png" alt="Foto do sobremesa">
-                        <div class="card__info">
-                         <span class="card__titulo">Instituto Nu, promovendo a inclusão financeira</span>
-                         <span class="card__servico">Superação, incentivando as favelas e periferias brasileira </span>
-                         <span>
-                         <span class="card__interesse">Educação, Empregavilidade</span>
-                         </span>
-                         <span>
-                         <span class="card__descricao">"Porque vocé vale muito e merece ..."</span>
-                         <span class="card__titulo">Ven Ja... </span>
-                         </span>
-                        </div>
-                       </a>
-                       <a href="https://github.com/Velchael/dummyquatro.git" class="botao-car botao_primario">
-                        <spam class="card__titulorepositorio">Repositorio</spam>
-                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                         <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                         </svg>
-                       </a>
-                       <a href="https://velchael.github.io/dummyquatro" class="botao-car botao_primario">
-                         <spam class="card__titulorepositorio">Demo</spam>
-                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                         <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                         </svg>
-                       </a>
-                       
+                        <a href="https://velchael.github.io/dummyquatro">
+                          <img src="institutonu.png" alt="Foto do sobremesa">
+                          <div class="card__info">
+                           <span class="card__titulo">Instituto Nu, inclusão financeira</span>
+                           <span class="card__servico">Superação </span>
+                           <span>
+                           <span class="card__interesse">Educação, Empregavilidade</span>
+                           </span>
+                           <span>
+                           <span class="card__descricao">"Porque vocé vale muito e merece ..."</span>
+                           <span class="card__titulo">Ven Ja... </span>
+                           </span>
+                          </div>
+                        </a>
+                                   
                       </div>
-
                       <div class="carrusel-item">
                         
                          <a href="https://velchael.github.io/Michele-Dias/">
                           <img src="MicheleDias.jpg" alt="foto de Michele" >
                           <div class="card__info">
                            <span class="card__titulo">Meu portfolio</span>
-                           <span class="card__servico">Escola de daça, Minha viaje para Israel, ETED</span>
+                           <span class="card__servico">Escola de daça, Minha viaje para Israel</span>
                            <span>
                            <span class="card__interesse">Me Apoie, Quero servir</span>
                            </span>
@@ -166,27 +128,13 @@
                            </span>
                           </div>
                          </a>
-                          <a href="https://github.com/Velchael/Michele-Dias.git" class="botao-car botao_primario">
-                          <spam class="card__titulorepositorio">Repositorio</spam>
-                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                            <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                           </svg>
-                          </a>
-                          <a href="https://velchael.github.io/Michele-Dias/" class="botao-car botao_primario">
-                           <spam class="card__titulorepositorio">Demo</spam>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                             <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                            </svg>
-                          </a>
-                        
-                       </div>
-
-                       <div class="carrusel-item">
+                      </div>
+                      <div class="carrusel-item">
                         <a href="https://carouselvercel.vercel.app/">
                         <img src="3_Search-Indexing.png" alt="" />
                         <div class="card__info">
                           <span class="card__titulo">Rutas anidadas</span>
-                          <span class="card__servico">Rutas automaticas com userNavigate</span>
+                          <span class="card__servico">Rutas automaticas</span>
                           <span>
                           <span class="card__interesse">React Rutas, Use Hooks , Githubpage</span>
                           </span>
@@ -194,28 +142,16 @@
                           <span class="card__descricao">"Um programa simples mais poderoso"</span>
                           <span class="card__titulo">Vem conhecer </span>
                           </span>
-                         </div>
+                        </div>
                         </a>
-                         <a href="" class="botao-car botao_primario">
-                         <spam class="card__titulorepositorio">Repositorio</spam>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                           <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                          </svg>
-                         </a>
-                         <a href="https://carouselvercel.vercel.app/" class="botao-car botao_primario">
-                          <spam class="card__titulorepositorio">Demo</spam>
-                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                            <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                           </svg>
-                         </a>
-                      </div>
-                    
+                       
+                      </div>               
                       <div class="carrusel-item">
                           <a href="https://velchael.github.io/github-page/">
                           <img src="R.png" alt="" />
                           <div class="card__info">
                             <span class="card__titulo">Githubpage</span>
-                            <span class="card__servico">Deploy de React em Githubpage </span>
+                            <span class="card__servico">Deploy de React </span>
                             <span>
                             <span class="card__interesse">React, Deploy, Githubpage</span>
                             </span>
@@ -223,21 +159,10 @@
                             <span class="card__descricao">"Faça o upload do seu aplicativo na web"</span>
                             <span class="card__titulo">Vem conhecer </span>
                             </span>
-                           </div>
+                          </div>
                           </a>
-                           <a href="https://github.com/Velchael/github-page.git" class="botao-car botao_primario">
-                           <spam class="card__titulorepositorio">Repositorio</spam>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                             <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                            </svg>
-                           </a>
-                           <a href="https://github.com/Velchael/github-page.git" class="botao-car botao_primario">
-                            <spam class="card__titulorepositorio">Demo</spam>
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                              <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                             </svg>
-                           </a>
-                        </div>
+                         
+                      </div>
                       <div class="carrusel-item">
                         <a href="https://velchael.github.io/carruselJavasScript/">
                           <img src="maxresdefault (2).jpg" alt="" />
@@ -251,26 +176,15 @@
                             <span class="card__descricao">"Faça um Carrusel de Gatos fofo"</span>
                             <span class="card__titulo">Vem conhecer </span>
                             </span>
-                           </div>
-                          </a>
-                           <a href="https://github.com/Velchael/carruselJavasScript.git" class="botao-car botao_primario">
-                           <spam class="card__titulorepositorio">Repositorio</spam>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                             <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                            </svg>
-                           </a>
-                           <a href="https://velchael.github.io/carruselJavasScript/" class="botao-car botao_primario">
-                            <spam class="card__titulorepositorio">Demo</spam>
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                              <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                             </svg>
-                           </a>
+                          </div>
+                        </a>
+                      
                       </div>
                       <div class="carrusel-item">
                         <a href="https://velchael.github.io/valida-o-de-formulario/">
                           <img src="maxresdefault (1).jpg" alt="" />
                           <div class="card__info">
-                            <span class="card__titulo">Validação de formulario JavasScript</span>
+                            <span class="card__titulo">Validação de formulario </span>
                             <span class="card__servico">Deploy de Validação </span>
                             <span>
                             <span class="card__interesse">Validação, Deploy, Formulario</span>
@@ -281,20 +195,8 @@
                             </span>
                            </div>
                           </a>
-                           <a href="" class="botao-car botao_primario">
-                           <spam class="card__titulorepositorio">Repositorio</spam>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                             <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                            </svg>
-                           </a>
-                           <a href="https://velchael.github.io/valida-o-de-formulario/" class="botao-car botao_primario">
-                            <spam class="card__titulorepositorio">Demo</spam>
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                              <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                             </svg>
-                           </a>
+                          
                       </div>
-
                       <div class="carrusel-item">
                         <a href="https://velchael.github.io/consumiendo_API_-viaCEP/">
                           <img src="unnamed.png" alt="consulta endereço" />
@@ -310,27 +212,12 @@
                             </span>
                            </div>
                           </a>
-                           <a href="https://github.com/Velchael/consumiendo_API_-viaCEP.git" class="botao-car botao_primario">
-                           <spam class="card__titulorepositorio">Repositorio</spam>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                             <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                            </svg>
-                           </a>
-                           <a href="https://velchael.github.io/consumiendo_API_-viaCEP/" class="botao-car botao_primario">
-                            <spam class="card__titulorepositorio">Demo</spam>
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                              <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                             </svg>
-                           </a>
+                          
                       </div>
-                      </div>
-
-                    </div>
+                   </div>
                   </div>
-              
                 </div>
-            
-              <footer class="rodape">
+                <footer class="rodape">
                 <div> 
                   <h3>Fala comigo </h3>
                    <ul>
@@ -338,15 +225,13 @@
                      <p>Preenche o formulário em<strong> BAIXO </strong> e entrarei em contato o mais rápido possível.</p> 
                      <p style="color:#ffffff"><STRONG>Facebook ,
                       instagram , Whatsapp , Youtube ...</strong></p>
-                   </ul>
-                
+                   </ul>  
                    <div>
                     <a href="https://web.facebook.com/profile.php?id=100004807065957" class="botao botao__primario">
                       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
                       </svg>
-              
                     </a>
                     <a href="https://www.instagram.com/velchaelmendez/" class="botao botao__primario">
                       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b82f7c" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -354,8 +239,7 @@
                         <rect x="4" y="4" width="16" height="16" rx="4" />
                         <circle cx="12" cy="12" r="3" />
                         <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                      </svg>
-              
+                      </svg> 
                     </a>
                     <a href="https://wa.me/5511981868794" class="botao botao__primario">
                       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -363,9 +247,7 @@
                         <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
                         <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path>
                       </svg>
-              
                     </a>
-
                     <a href="https://youtube.com/channel/UCA6X6RulyTFCU32odRUqIXA" class="botao botao__primario">
                       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -398,9 +280,8 @@
                   </div>
                  </form>
                 </div>            
-              </footer>
-                </div>
+                </footer>
             </main>
         <script src="main.js"></script>
-      </body>      
-  </html>
+    </body>      
+    </html>

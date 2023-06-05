@@ -160,7 +160,7 @@ img {
   justify-content: center;
 }
 .card__info{
-  height: 120px;
+  height: 100px;
   width: 171px;
   border-radius: 12px;
   background-color: rgb(255 255 255);
@@ -182,36 +182,26 @@ img {
   color: rgb(255 255 255);
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 14px;
+  /*line-height: 8px;*/
   width: fit-content;
   padding: 2px 4px;
   margin-bottom: 0px;
 }
-.card__titulorepositorio {
-  text-align: center;
-  background-color: rgb(110, 115, 115);
-  border-radius: 3px;
-  color: rgb(255 255 255);
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 14px;
-  width: fit-content;
-  padding: 2px 6px;
-  margin-bottom: 15px;
-}
 .card__servico {
+  line-height: 12px;
   font-size: 12px;
   font-weight: 300;
   color: rgb(102 102 102);
 }
 .card__interesse  {
-  font-size: 19px;
+  line-height: 12.6px;
+  font-size: 15px;
   line-height: 21px;
   color: rgba(0 0 0 / 80%);
 }
 .card__descricao {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 10.8px;
   color: rgb(0 166 80);
 }
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');*/
@@ -319,3 +309,32 @@ img {
   height: 70%;
   object-fit: cover;
 }
+
+/* boton para ir al repositorio o al demo
+.card__titulorepositorio {
+  text-align: center;
+  background-color: rgb(110, 115, 115);
+  border-radius: 3px;
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 14px;
+  width: fit-content;
+  padding: 2px 6px;
+  margin-bottom: 15px;
+}
+
+
+<a href="https://github.com/Velchael/react-dummydos.git" class="botao-car botao_primario">
+                         <spam class="card__titulorepositorio">Repositorio</spam>
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                          <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
+                         </svg>
+                        </a>
+                        <a href="https://velchael.github.io/react-dummydos" class="botao-car botao_primario">
+                         <spam class="card__titulorepositorio">Demo</spam>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                          <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
+                         </svg>
+                        </a>
+*/

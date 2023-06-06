@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   display: grid;
  /*elimiar para fazer o scrol automatico*/
-  grid-template-rows: 90px 500px 350px 180px 150px 500px 700px;
+  grid-template-rows: 95px 250px 350px 180px 150px 500px 700px;
   column-gap: 0px;
   row-gap: 0px;
 }
@@ -35,26 +35,24 @@ body {
 .avatar__imagem1 {
   height: 100%;
   width: 100%;
-  border-radius: 50%; 
+ /* border-radius: 50%;*/
 }
 .imagem-topo1 {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 58px;
-  color: #ffffff;
   height: 56px;
   width: 56px;
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border: 1px solid white;
 }
 .imagem-topo3 {
-  padding: 0px 0px;
+  /*padding: 0px 0px;*/
   grid-column: 2 /3;
   border-color: rgb(206 212 211);
   border-width: 3px;
-  height: 0px;
+ /* height: 0px;*/
   border-radius: 160px;
   border-style: solid;
 }
@@ -64,14 +62,14 @@ body {
   border-radius: 100%;
 }
 .imagem-topo3 {
-  height: 300px;
-  width: 300px;
-  align-items: center;
-  justify-content: center;
+  height: 200px;
+  width: 200px;
+ /* align-items: center;
+  justify-content: center;*/
 }
 .conteudo {
  align-items: center;
- padding: 130px 1px; 
+ padding: 100px 1px; 
   grid-column: 1 / 5;
 }
 .lateral {
@@ -88,9 +86,6 @@ body {
 /*//// nueva posicion Grid para carrusel //////*/
 .publicidade-final {
   grid-column: 1 / 5;
-
- /* grid-column-start: 1;
-  grid-column-end: 3;*/
 }
 .rodape {
   background-color:rgb(120, 162, 167);
@@ -121,8 +116,8 @@ body {
 }
 .botao__primario {
   background-color: transparent;
-  color: #101011;
-  border-color: #070707;
+  color: #2489ed;
+  border-color: #ffffff;
 }
 .botao__primario:hover {
   background-color: rgb(252, 253, 253);
@@ -140,36 +135,18 @@ a {
 img {
   max-height: 100%;
   max-width: 100%; }
-.card {
-  height: 450px;
-  width: 225px;
-  border-radius: 4px;
-  background-color: rgb(255 255 255);
-  box-shadow: 0 1px 2px 0 rgba(0 0 0 / 12%);
-  overflow: hidden;
-  font-family: sans-serif;
-}
-.card:hover {
-  box-shadow: 0 0 1px 1px rgba(0 0 0 / 7%), 0 10px 15px 0 rgba(0 0 0 / 10%);
-}
-.card__imagem {
-  border-bottom: 1px solid rgb(245 245 245);
-  height: 250px;
-  width: 300px;
-  align-items: center;
-  justify-content: center;
-}
 .card__info{
-  height: 100px;
-  width: 171px;
-  border-radius: 12px;
+  height: 90px;
+  width: 181px;
+  /*border-radius: 12px;
   background-color: rgb(255 255 255);
-  box-shadow: 0 5px 7px 0 rgba(0 0 0 / 20%);
-  overflow: hidden;
+ /* box-shadow: 0 5px 7px 0 rgba(0 0 0 / 20%);*/
+  /*overflow: hidden;*/
+  text-align: center;
   font-family: sans-serif;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 0px;
 }
 .card__info > span {
   display: block;
@@ -177,15 +154,18 @@ img {
 }
 .card__titulo {
   text-align: center;
-  background-color: rgb(227, 53, 250);
-  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(137, 186, 202);
+  border-radius: 7px;
   color: rgb(255 255 255);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 8px;
   /*line-height: 8px;*/
-  width: fit-content;
+  /*width: fit-content;*/
   padding: 2px 4px;
-  margin-bottom: 0px;
+ /* margin-bottom: 0px;*/
+  margin-top: 0px;
 }
 .card__servico {
   line-height: 12px;
@@ -195,14 +175,14 @@ img {
 }
 .card__interesse  {
   line-height: 12.6px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 21px;
   color: rgba(0 0 0 / 80%);
 }
 .card__descricao {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 10.8px;
-  color: rgb(0 166 80);
+  color: rgb(49, 157, 239);
 }
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');*/
 .container.box {
@@ -278,9 +258,6 @@ img {
 }
 /*//////////////////////////////////    Carrusel /////////////////////*/
 .carrusel {
-  /*height: 170vh;
-  display: flex;
-  align-items: center;*/
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
   grid-gap: 20px; /* Espacio entre columnas */
@@ -292,22 +269,26 @@ img {
   overflow-y: hidden;
   grid-column: 1 / 5; /* El carrusel ocupa desde la primera hasta la cuarta columna */
   overflow-x: scroll;
-  padding: 125px 0px;
+  padding: 8px 0px;
 }
 .carrusel-item {
   background-color: rgb(255 255 255);
-  min-width: 230px;
-  max-width: 0px;
-  cursor: pointer;
-  height: 280px;
-  width: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   border-radius: 12px;
   box-shadow: 0 5px 7px 0 rgba(0 0 0 / 20%);
 }
 .carrusel-item img {
-  width: 90%;
-  height: 70%;
+  width: 60%;
+  height: 50%;
   object-fit: cover;
+  /*display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  /*margin-top: 20px;*/
 }
 
 /* boton para ir al repositorio o al demo
@@ -323,8 +304,6 @@ img {
   padding: 2px 6px;
   margin-bottom: 15px;
 }
-
-
 <a href="https://github.com/Velchael/react-dummydos.git" class="botao-car botao_primario">
                          <spam class="card__titulorepositorio">Repositorio</spam>
                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">

@@ -7,12 +7,22 @@
       <link rel="stylesheet" href="./estilos/estilo.css">
       <title>Projeto Salvador</title>
       <script>
-        window.addEventListener('load', function() {
-          var liElement = document.querySelector('li.list:first-child');
-          if (liElement) {
-            liElement.scrollIntoView();
-          }
-        });
+         window.addEventListener('DOMContentLoaded', function() {
+           window.scrollTo(0, 0);
+          });
+         
+            window.addEventListener('DOMContentLoaded', function() {
+            var apresentacaoLink = document.querySelector('a[href="#apresentacao"]');
+            var apresentacaoElement = document.querySelector('#apresentacao');
+      
+            apresentacaoLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        
+            if (apresentacaoElement) {
+             apresentacaoElement.scrollIntoView();
+              }
+            });
+            });
         </script>
      </head>
     <body>
@@ -23,7 +33,7 @@
          </div>
          <nav id="menu">
           <ul style="color:#060606">
-           <li class="list"><a href ="#">Apresentação</a></li>
+           <li class="list"><a href ="#apresentacao">Apresentação</a></li>
            <li class="list"><a href ="#">Formação</a></li>
            <li class="list"><a href ="#">Experiência</a></l1>
            <li class="list"><a href ="#">Projetos</a></li>
@@ -50,15 +60,17 @@
            </div>
           </div>
         </div>
-            <main class="conteudo">          
-                <div style="color:#060606">
-                  <h1>Velchael Mendez</h1>
-                  <h2>Desenvolvedor fron-End</h2>
-                  <h3>Que tal?</h3>
-                  <p> Sou <strong>Venezuelano</strong>, falo  <strong> espanhol estou começando uma nova história no BRASIL.
-                   Tenho quatro anos morando na cidade de <strong>Salvador da Bahia</strong>
-                  </p>
-                </div>
+            <main class="conteudo">
+                <article id="apresentacao">
+                  <div style="color:#060606">
+                    <h1>Velchael Mendez</h1>
+                    <h2>Desenvolvedor fron-End</h2>
+                    <h3>Que tal?</h3>
+                    <p> Sou <strong>Venezuelano</strong>, falo  <strong> espanhol estou começando uma nova história no BRASIL.
+                     Tenho quatro anos morando na cidade de <strong>Salvador da Bahia</strong>
+                    </p>
+                  </div>
+                </article>          
                 <aside class="lateral">
                   <div style="color:#01010e">
                     <h1>formação</h1>
@@ -271,7 +283,7 @@
                     </a>
                   </div>
                 </div>                              
-                <div class="container">
+                <div>
                  <form class="form" id="form" action="https://formsubmit.co/stalinmendez69@gmail.com"
                  method="POST">
                  <div class="form-control">
@@ -282,7 +294,7 @@
                   <label for="email">E-mail</label>
                   <input type="email" name="email" id="email" required placeholder="E-mail" pattern="[\w\d]+@[\w\d]+\.[\w\d]+" title="informe um E-mail valido"/>
                  </div>
-                 <div class="form-control" >
+                 <div class="form-control">
                   <label for="message">Mensagem</label>
                   <textarea name="message" id="message" required placeholder="Escreva Mensagem" maxlength="140"></textarea>
                  </div>

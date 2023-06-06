@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   display: grid;
  /*elimiar para fazer o scrol automatico*/
-  grid-template-rows: 95px 250px 350px 180px 150px 500px 700px;
+  grid-template-rows: 95px 250px 350px 180px 150px 500px 450px;
   column-gap: 0px;
   row-gap: 0px;
 }
@@ -185,6 +185,7 @@ img {
   color: rgb(49, 157, 239);
 }
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');*/
+
 .container.box {
     background-color: #2F3644;
     border-radius: 5px;
@@ -235,7 +236,7 @@ img {
     padding: 15px;
 }
 .form button {
-    background-color: #6C63FF;
+    background-color: #0e86e7;
     border-radius: 5px;
     color: #fff;
     padding: 15px;
@@ -246,7 +247,7 @@ img {
     cursor: pointer;
 }
 .form button:hover {
-    background-color: #584ff5;
+    background-color: #4fb8f5;
     transition: 0.4s;
 }
 .form textarea {
@@ -317,3 +318,11 @@ img {
                          </svg>
                         </a>
 */
+
+/* possionamiento al ininiciar el site
+ window.addEventListener('load', function() {
+          var bodyElement = document.querySelector('body:first-child');
+          if (bodyElement) {
+            liElement.scrollIntoView();
+          }
+        });*/

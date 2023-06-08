@@ -48,12 +48,22 @@ body {
   overflow: hidden;
   border: 1px solid white;
 }
+
+.imagen-forma1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.imagen-forma2 {
+  height: 100%;
+  width: 100%;
+}
+
 .imagem-topo3 {
-  /*padding: 0px 0px;*/
   grid-column: 2 /3;
   border-color: rgb(206 212 211);
   border-width: 3px;
- /* height: 0px;*/
   border-radius: 160px;
   border-style: solid;
 }
@@ -65,25 +75,74 @@ body {
 .imagem-topo3 {
   height: 200px;
   width: 200px;
- /* align-items: center;
-  justify-content: center;*/
 }
 .conteudo {
  align-items: center;
  padding: 100px 1px; 
   grid-column: 1 / 5;
 }
+.apresenta {
+   align-items: center;
+   justify-content: center;
+   background-image: linear-gradient(to bottom, rgba(178, 241, 236, 0.971), rgba(255, 255, 255, 0.971));
+   grid-column: 1 / 5;
+ }
 .lateral {
- /* align-items: flex-start;*mofificcio 3*/
+      align-items: center;
+      justify-content: center;
+      background-image: url("fotopresenta.jpg");
+      /*background-color: #000000f8;*/
+      mix-blend-mode: multiply;
+      background-image: linear-gradient(to bottom, rgba(178, 241, 236, 0.971), rgba(255, 255, 255, 0.971));
+      /*-webkit-mask-image: linear-gradient(to bottom, transparent, black);
+      mask-image: linear-gradient(to bottom, transparent, black);*/
+      grid-column: 1 / 5;
+}
+.foto {
+  clip-path: inset(0 0 15% 0);
+}
+.containerh1 {
+  top: 2%;
+  margin-left: 3em;
+  align-items: center;
+  position: absolute;
+}
+.containerp {
+  margin-left: 2em;
+  top: 10%;
+  position: absolute;
+}
+.containerp1 {
+  margin-left: 10em;
+  top: 76%;
+  position: absolute;
+}
+
+.publicidade-lateral {
+
   align-items: center;
   justify-content: center;
-  background-color: darkgray;
+  background-image: url("experiencia.jpg");
+  mix-blend-mode: multiply;
+ /* background-image: linear-gradient(to bottom, rgba(178, 241, 236, 0.971), rgba(255, 255, 255, 0.971));*/
+
+  /* degrade.....................
+  background-image: linear-gradient(to bottom, rgba(234, 228, 182, 0.992), rgba(255, 255, 255, 0.971));
+  background-color: rgb(117, 189, 247);*/
   grid-column: 1 / 5;
 }
-.publicidade-lateral {
-  background-color: rgb(117, 189, 247);
-  grid-column: 1 / 5;
+.experienciap1 {
+  margin-left: 1em;
+  top: 15%;
+  position: absolute;
 }
+.experienciap2 {
+  margin-left: 1em;
+  top: 20%;
+  position: absolute;
+}
+
+
 /*//// nueva posicion Grid para carrusel //////*/
 .publicidade-final {
   grid-column: 1 / 5;
@@ -118,7 +177,7 @@ body {
 .botao__primario {
   background-color: transparent;
   color: #2489ed;
-  border-color: #ffffff;
+  border-color: #0a85f0;
 }
 .botao__primario:hover {
   background-color: rgb(252, 253, 253);
@@ -137,7 +196,7 @@ img {
   max-height: 100%;
   max-width: 100%; }
 .card__info{
-  height: 90px;
+  /*height: 90px;*/
   width: 181px;
   /*border-radius: 12px;
   background-color: rgb(255 255 255);
@@ -282,14 +341,15 @@ img {
   text-align: center;
   border-radius: 12px;
   box-shadow: 0 5px 7px 0 rgba(0 0 0 / 20%);
+  height: 260px;
 }
 .carrusel-item img {
-  width: 60%;
-  height: 50%;
+  width: 70%;
+  height: 60%;
   object-fit: cover;
   /*display: flex;
   /*justify-content: center;*/
-  align-items: center;
+  /*align-items: center;*/
   /*margin-top: 20px;*/
 }
 

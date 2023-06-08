@@ -25,6 +25,61 @@
               }
             });
             });
+
+
+            window.addEventListener('DOMContentLoaded', function() {
+            var formacaoLink = document.querySelector('a[href="#formacao"]');
+            var formacaoElement = document.querySelector('#formacao');
+      
+            apresentacaoLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        
+            if (formacaoElement) {
+             apresentacaoElement.scrollIntoView();
+              }
+            });
+            });
+
+            window.addEventListener('DOMContentLoaded', function() {
+            var experienciaLink = document.querySelector('a[href="#experiencia"]');
+            var experienciaElement = document.querySelector('#experiencia');
+      
+            apresentacaoLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        
+            if (experienciaElement) {
+             apresentacaoElement.scrollIntoView();
+              }
+            });
+            });
+
+            window.addEventListener('DOMContentLoaded', function() {
+            var projetoLink = document.querySelector('a[href="#projeto"]');
+            var projetoElement = document.querySelector('#projeto');
+      
+            apresentacaoLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        
+            if (projetoElement) {
+             apresentacaoElement.scrollIntoView();
+              }
+            });
+            });
+
+
+            window.addEventListener('DOMContentLoaded', function() {
+            var registroLink = document.querySelector('a[href="#registro"]');
+            var registroElement = document.querySelector('#registro');
+      
+            apresentacaoLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        
+            if (registroElement) {
+             apresentacaoElement.scrollIntoView();
+              }
+            });
+            });
+
         </script>
      </head>
     <body>
@@ -36,16 +91,17 @@
          <nav id="menu">
           <ul style="color:#060606">
            <li class="list"><a href ="#apresentacao">Apresentação</a></li>
-           <li class="list"><a href ="#">Formação</a></li>
-           <li class="list"><a href ="#">Experiência</a></l1>
-           <li class="list"><a href ="#">Projetos</a></li>
-           <li class="list"><a href ="#">Fale_Comigo</a></li>
+           <li class="list"><a href ="#formacao">Formação</a></li>
+           <li class="list"><a href ="#experiencia">Experiência</a></l1>
+           <li class="list"><a href ="#projeto">Projetos</a></li>
+           <li class="list"><a href ="#registro">Fale_Comigo</a></li>
           </ul>
          </nav>
        </header>
-        <div style="position:relative" class="imagem-topo"><img src="altodeondina.jpg" alt="Alto de Ondina">
-         <div style="position:absolute; top:45%; left:30%;" class="imagem-topo3"><img src="eunoonibusultimaversion.jpg" alt="Eu no Salvador."
-           class="avatar__imagem3">
+        <div style="position:relative" class="imagem-topo">
+          <img src="altodeondina.jpg" alt="Alto de Ondina">
+         <div style="position:absolute; top:45%; left:30%;" class="imagem-topo3">
+          <img src="eunoonibusultimaversion.jpg" alt="Eu no Salvador."class="avatar__imagem3">
            <div>
             <a href="https://www.linkedin.com/in/velchael-mendez-b31106256/" class="botao botao__primario">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
@@ -63,33 +119,38 @@
           </div>
         </div>
             <main class="conteudo">
-                <article id="apresentacao">
+                <article id="apresentacao"class="apresenta">
                   <div style="color:#060606">
-                    <h1>Velchael Mendez</h1>
-                    <h2>Desenvolvedor fron-End</h2>
+                    <br>
+                    <h1>Presentação</h1>
+                    <h2>Velchael Mendez</h2>
+                    <h3>Desenvolvedor fron-End</h3>
                     <h3>Que tal?</h3>
                     <p> Sou <strong>Venezuelano</strong>, falo  <strong> espanhol estou começando uma nova história no BRASIL.
                      Tenho quatro anos morando na cidade de <strong>Salvador da Bahia</strong>
                     </p>
+                    <br>
                   </div>
                 </article>          
-                <aside class="lateral">
-                  <div style="color:#01010e">
-                    <h1>formação</h1>
-                    <p> Técnico de meio em <strong>Analista de Sistemas. </strong>
-                     I.U.T.E.P Campus Acarigua Venezuela</p>
-                    <p> Desenvolvedor em programaçaõ <strong> Fron-End, Back-end</strong> 
-                    No instituto <strong> TOTI</strong></p>
+                <aside id="formacao"class="lateral">
+                  <div style="position:relative; color:#01010e">
+                    <img class="imagen-forma1"src="fotopresenta.jpg" alt="Foto oficina web" class="imagen-forma2" class="foto">
+                      <h1 class="containerh1">Formação</h1>
+                      <h3 class="containerp">Técnico de meio em Analista de Sistemas</h3>
+                      <h4 class="containerp1">Desenvolvedor em programaçaõ Fron-End, Back-end No instituto TOTI.</h4>
+                    
                   </div> 
                 </aside>
-                <aside class="publicidade-lateral">
-                  <div style="color:#01010e">
-                   <h1>Experiencia</h1>
-                   <p> Desenvolvendo aplicativos como Lojapet, InstitutoNu, Caminhos Sustentáveis, Portfólios para Empreendedores entre outros
-                   </p>
+                <aside id="experiencia"class="publicidade-lateral">
+                  <div style="position:relative; color:#01010e">
+                    <br>
+                    <img class="imagen-forma1"src="experiencia.jpg" alt="Foto oficina web" class="imagen-forma2">
+                    <h1 class="containerh1">Experiencia</h1>
+                    <p class="experienciap1"> Desenvolvendo aplicativos como Lojapet,</p>
+                    <p class="experienciap2"> InstitutoNu, Caminhos Sustentáveis, Portfólios para Empreendedores entre outros.</p>
                   </div>
                 </aside>  
-                <div class="publicidade-final">     
+                <div id="projeto"class="publicidade-final">     
                   <h1>Projetos</h1>
                   <div class="carrusel">       
                    <div class="carrusel-items">  
@@ -99,13 +160,9 @@
                          <div class="card__info" >
                           <span class="card__titulo">TOTIpetz, tudo para o cuidado de seu Petz</span>
                           <span class="card__servico">Serviço personalizado</span>
-                          <span>
                           <span class="card__interesse">Cuide, Alimente, Fique bem.</span>
-                          </span>
-                          <span>
                           <span class="card__descricao">"A felicidade que seu Pet merece..."</span>
-                          <span class="card__titulo">Ven logo</span>
-                          </span>
+                          <span> <span class="card__titulo">Ven logo</span> </span>
                          </div>
                         </a>        
                       </div>
@@ -115,30 +172,21 @@
                           <div class="card__info">
                            <span class="card__titulo">Instituto Nu, inclusão financeira</span>
                            <span class="card__servico">Superação </span>
-                           <span>
                            <span class="card__interesse">Educação, Empregavilidade</span>
-                           </span>
-                           <span>
                            <span class="card__descricao">"Porque vocé vale muito e merece ..."</span>
-                           <span class="card__titulo">Ven Ja... </span>
-                           </span>
+                           <span> <span class="card__titulo">Ven Ja... </span> </span>
                           </div>
                         </a>         
                       </div>
                       <div class="carrusel-item">
-                        
                          <a href="https://velchael.github.io/Michele-Dias/">
-                          <img src="MicheleDias.jpg" alt="foto de Michele" >
+                          <img src="MicheleDias1.jpg" alt="foto de Michele" >
                           <div class="card__info">
                            <span class="card__titulo">Meu portfolio</span>
-                           <span class="card__servico">Escola de daça, Minha viaje para Israel</span>
-                           <span>
+                           <span class="card__servico">Escola de daça</span>
                            <span class="card__interesse">Me Apoie, Quero servir</span>
-                           </span>
-                           <span>
                            <span class="card__descricao">"Ser bailarina não é só de corpo, é de alma"</span>
-                           <span class="card__titulo">Vem me conhecer </span>
-                           </span>
+                           <span> <span class="card__titulo">Vem me conhecer </span> </span>
                           </div>
                          </a>
                       </div>
@@ -203,7 +251,7 @@
                             <span class="card__interesse">Validação, Deploy, Formulario</span>
                             </span>
                             <span>
-                            <span class="card__descricao">"Faça uma Validação"</span>
+                            <span class="card__descricao">"Faça uma Validação agora..."</span>
                             <span class="card__titulo">Vem aprender </span>
                             </span>
                            </div>
@@ -245,7 +293,7 @@
                    </div>
                   </div>
                 </div>
-                <footer class="rodape">
+                <footer id="registro"class="rodape">
                 <div> 
                   <h3>Fala comigo </h3>
                    <ul>

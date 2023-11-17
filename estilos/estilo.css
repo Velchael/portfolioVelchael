@@ -9,8 +9,8 @@ body {
   display: grid;
  /*elimiar para fazer o scrol automatico*/
   grid-template-rows: 95px 250px 350px 180px 150px 500px 450px;
-  /*column-gap: 10px;
-  row-gap: 10px;*/
+  column-gap: 10px;
+  row-gap: 10px;
  
 }
 

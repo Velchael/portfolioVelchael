@@ -9,10 +9,21 @@ body {
   display: grid;
  /*elimiar para fazer o scrol automatico*/
   grid-template-rows: 95px 250px 350px 180px 150px 500px 450px;
-  column-gap: 10px;
-  row-gap: 10px;
+  /*column-gap: 10px;
+  row-gap: 10px;*/
  
 }
+
+#menu ul li a {
+  text-decoration: none;
+  color: #060606;
+  transition: color 0.3s;
+}
+
+#menu ul li a:hover {
+  color: hsl(0, 0%, 100%); /* Cambia el color al pasar el ratón por encima */
+}
+
 .cabecalho {
   grid-column: 1 / 5;
   display: flex;
@@ -124,11 +135,6 @@ body {
   justify-content: center;
   background-image: url("experiencia.jpg");
   mix-blend-mode: multiply;
- /* background-image: linear-gradient(to bottom, rgba(178, 241, 236, 0.971), rgba(255, 255, 255, 0.971));*/
-
-  /* degrade.....................
-  background-image: linear-gradient(to bottom, rgba(234, 228, 182, 0.992), rgba(255, 255, 255, 0.971));
-  background-color: rgb(117, 189, 247);*/
   grid-column: 1 / 5;
 }
 .experienciap1 {
@@ -196,12 +202,7 @@ img {
   max-height: 100%;
   max-width: 100%; }
 .card__info{
-  /*height: 90px;*/
   width: 181px;
-  /*border-radius: 12px;
-  background-color: rgb(255 255 255);
- /* box-shadow: 0 5px 7px 0 rgba(0 0 0 / 20%);*/
-  /*overflow: hidden;*/
   text-align: center;
   font-family: sans-serif;
   align-items: center;
@@ -221,10 +222,7 @@ img {
   color: rgb(255 255 255);
   text-transform: uppercase;
   font-size: 8px;
-  /*line-height: 8px;*/
-  /*width: fit-content;*/
   padding: 2px 4px;
- /* margin-bottom: 0px;*/
   margin-top: 0px;
 }
 .card__servico {
@@ -235,7 +233,7 @@ img {
 }
 .card__interesse  {
   line-height: 12.6px;
-  font-size: 13px;
+  font-size: 11px;
   line-height: 21px;
   color: rgba(0 0 0 / 80%);
 }
@@ -259,7 +257,7 @@ img {
 }  
 .container.box .box-cell {
   display:table-cell;
-  border:px solid black;
+  border:2px solid black;
   width:25%;
   padding:60px;
 }
@@ -330,7 +328,7 @@ img {
   overflow-y: hidden;
   grid-column: 1 / 5; /* El carrusel ocupa desde la primera hasta la cuarta columna */
   overflow-x: scroll;
-  padding: 8px 0px;
+  padding: 8px 10px;
 }
 .carrusel-item {
   background-color: rgb(255 255 255);
@@ -340,55 +338,15 @@ img {
   justify-content: center;
   text-align: center;
   border-radius: 12px;
-  box-shadow: 0 5px 7px 0 rgba(0 0 0 / 20%);
+  /*padding: 8px;*/
+  margin-right: 15px; /* Ajusta el valor según la separación deseada */
+  /*box-shadow: 0 5px 7px 0 rgba(0 0 0 / 20%);*/
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   height: 260px;
 }
 .carrusel-item img {
+  
   width: 70%;
   height: 60%;
   object-fit: cover;
-  /*display: flex;
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  /*margin-top: 20px;*/
 }
-
-/* boton para ir al repositorio o al demo
-.card__titulorepositorio {
-  text-align: center;
-  background-color: rgb(110, 115, 115);
-  border-radius: 3px;
-  color: rgb(255 255 255);
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 14px;
-  width: fit-content;
-  padding: 2px 6px;
-  margin-bottom: 15px;
-}
-<a href="https://github.com/Velchael/react-dummydos.git" class="botao-car botao_primario">
-                         <spam class="card__titulorepositorio">Repositorio</spam>
-                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                          <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                         </svg>
-                        </a>
-                        <a href="https://velchael.github.io/react-dummydos" class="botao-car botao_primario">
-                         <spam class="card__titulorepositorio">Demo</spam>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
-                          <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-                         </svg>
-                        </a>
-*/
-
-/* possionamiento al ininiciar el site
-    window.addEventListener('DOMContentLoaded', function() {
-           window.scrollTo(0, 0);
-          });
-          
-    window.addEventListener('load', function() {
-      var bodyElement = document.querySelector('body');
-      if (bodyElement) {
-        bodyElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-      });       
-          */

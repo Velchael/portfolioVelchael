@@ -13,6 +13,10 @@ body {
   row-gap: 10px;
  
 }
+.first-letter {
+  color: white;
+}   
+
 
 #menu ul li a {
   text-decoration: none;
